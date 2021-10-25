@@ -3,8 +3,8 @@ import { View, StyleSheet } from 'react-native';
 
 const Card = props => {
   return ( 
-    <View style={{...styles.card, ...props.style}}>{props.children}</View>
-  );
+    <View style={{...styles.card, ...props.style}}>{props.children}</View>  // ...styles.card uses all properties from card StyleSheet 
+  );                                                                        // while ...pros.style overrides it with aditional styles added in StartGameScreen via inputContainer
 };
 
 const styles = StyleSheet.create({
