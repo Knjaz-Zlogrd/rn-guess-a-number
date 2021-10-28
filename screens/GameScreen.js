@@ -36,7 +36,7 @@ const GameScreen = props => {
       (direction === 'lower' && currentGuess < props.userChoice) ||
       (direction === 'greater' && currentGuess > props.userChoice)
     ) {
-      Alert.alert("Don't lie!", 'You know that this is wrong...', [
+      Alert.alert("Don't lie!", 'Liers go to hell...', [
         { text: 'Sorry!', style: 'cancel' }
       ]);
       return;
@@ -57,7 +57,7 @@ const GameScreen = props => {
 
   return (
     <View style={styles.screen}>
-      <Text>Opponent's Guess</Text>
+      <Text>Computer's Guess</Text>
       <NumberContainer>{currentGuess}</NumberContainer>
       <Card style={styles.buttonContainer}>
         <Button 
